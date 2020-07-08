@@ -1,5 +1,5 @@
 class ShoppingCart
-  attr_reader :name
+  attr_reader :name, :products
 
   def initialize(name, capacity)
     @name = name
@@ -11,11 +11,11 @@ class ShoppingCart
     @capacity.to_i
   end
 
-  def products
-    []
+  def add_product(product)
+    @products << product
   end
 
-  def add_product(product)
-    product << product
+  def details
+
   end
 end
